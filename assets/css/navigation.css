@@ -1,0 +1,62 @@
+/* ============================== Header ============================== */
+.header {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    background-color: var(--body-color);
+}
+
+/* ============================== Nav ============================== */
+.nav {
+    width: 90%;
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_btns {
+    display: flex;
+    align-items: center;
+}
+.nav_logo,
+.nav_toggle {
+    color:var(--title-color);
+    font-weight: var(--font-medium);
+}
+.nav_toggle {
+    /* font-size: 1.1rem; */
+    cursor: pointer;
+}
+.nav_list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+.nav_link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: var(--small-font-size);
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+}
+.nav_icon {
+    font-size: 1.2rem;
+}
+.nav_close {
+    position: absolute;
+    right: 1.3rem;
+    bottom: 0.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--first-color);
+}
+.nav_logo:hover,
+.nav_toggle:hover,
+.nav_link:hover {
+    color: var(--first-color);
+}
+.nav_close:hover {
+    color: var(--first-color-alt);
+}
